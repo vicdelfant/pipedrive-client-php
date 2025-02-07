@@ -279,6 +279,7 @@ class BaseWebhook implements ModelInterface, ArrayAccess, JsonSerializable
         return [
             self::TYPE_GENERAL,
             self::TYPE_APP,
+            'application',
         ];
     }
 
