@@ -214,6 +214,11 @@ class GetOrganizations implements ModelInterface, ArrayAccess, JsonSerializable
         $this->container['additional_data'] = $data['additional_data'] ?? null;
     }
 
+    /**
+     * Gets additional_data
+     *
+     * @return \Pipedrive\versions\v1\Model\AdditionalDataWithCursorPagination|null
+     */
     public function getAdditionalData()
     {
         return $this->container['additional_data'];
